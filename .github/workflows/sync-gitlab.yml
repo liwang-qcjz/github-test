@@ -25,6 +25,7 @@ jobs:
           
       - name: Add GitLab remote
         run: |
+          echo "haha ha"
           git remote add gitlab https://${{ vars.GITLAB_USER_NAME }}:${{ secrets.GITLAB_TOKEN }}@${{ vars.GITLAB_DOMAIN }}${{ vars.GITLAB_PATH }}
 
       - name: Push PR branch to GitLab
