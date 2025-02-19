@@ -9,5 +9,5 @@ github:
     # needs:
     #     - compile_dev
     script:
-        - git remote add github git@github.com:leogoing/github-test.git
+        - git remote set-url github git@github.com:leogoing/github-test.git
         - git push -f github main:main
