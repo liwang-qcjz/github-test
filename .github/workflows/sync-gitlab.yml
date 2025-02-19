@@ -25,7 +25,7 @@ jobs:
           
       - name: Add GitLab remote
         run: |
-          git remote add gitlab https://${{ vars.GITLAB_USER_NAME }}:${{ secrets.GITLAB_TOKEN }}@git.qcjzai.cn/liwang/github-test.git
+          git remote add gitlab https://${{ vars.GITLAB_USER_NAME }}:${{ secrets.GITLAB_TOKEN }}@${{ vars.GITLAB_DOMAIN }}${{ vars.GITLAB_PATH }}
 
       - name: Push PR branch to GitLab
         run: |
