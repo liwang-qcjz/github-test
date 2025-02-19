@@ -10,4 +10,4 @@ github:
     #     - compile_dev
     script:
         - git remote add github git@github.com:leogoing/github-test.git
-        - git push github main:main
+        - git push -f github main:main
