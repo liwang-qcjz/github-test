@@ -1,0 +1,13 @@
+stages:
+    - sync
+
+github:
+    stage: sync
+    when: manual
+    tags:
+        - muxi
+    # needs:
+    #     - compile_dev
+    script:
+        - git remote add github git@github.com:leogoing/github-test.git
+        - git push github main:main
