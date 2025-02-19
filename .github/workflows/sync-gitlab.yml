@@ -29,4 +29,4 @@ jobs:
 
       - name: Push PR branch to GitLab
         run: |
-          git push gitlab ${{ github.event.pull_request.head.ref }}:${{ github.event.pull_request.title }}  # 推送 PR 分支
+          git push gitlab ${{ github.event.pull_request.head.ref }}:${{ github.event.pull_request.user.login }}_${{ github.event.pull_request.head.ref }}  # 推送 PR 分支
