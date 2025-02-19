@@ -5,7 +5,7 @@ github:
     stage: sync
     when: manual
     tags:
-        - muxi
+        - maas-runner
     # needs:
     #     - compile_dev
     script:
