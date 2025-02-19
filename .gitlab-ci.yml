@@ -5,7 +5,7 @@ github:
     stage: sync
     when: manual
     tags:
-        - maas-runner
+        - dev
     # needs:
     #     - compile_dev
     script:
